@@ -50,16 +50,6 @@ def get_orar(ent):
     return result
     
 
-def get_orare():
-    
-    res = {}
-    for linie in url_term:
-        res[linie+'1'] = get_orar(linie+'1')
-        res[linie+'2'] = get_orar(linie+'2')
-        res[linie+'3'] = get_orar(linie+'3')
-    
-    return res
-
 def get_orar_grupa(gru):
     
     linia = coresp[int(gru[0])]+gru[1]
